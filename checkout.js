@@ -71,7 +71,7 @@ document.getElementById('checkout-btn').addEventListener('click', async () => {
   }
 
   try {
-    const response = await fetch('https://e-secure-shop.onrender.com/create-checkout-session', {
+    const response = await fetch('https://e-secure-shop-1.onrender.com/create-checkout-session', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ cartItems: cart })
@@ -92,4 +92,5 @@ document.addEventListener('DOMContentLoaded', () => {
   updateCartCount();
   renderCart();
 });
+
 
